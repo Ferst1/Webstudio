@@ -710,7 +710,6 @@ p {
   border: 1px solid var(--hover-button-portfolio-background);
 }
 
-/* ----------------- ДЗ 5 (Анімації) --------------*/
 
 position
 /*---------- Portfolio card overlay ------------*/
@@ -907,6 +906,10 @@ position
   top: 50%;
   left: 16px;
   transform: translate(0, -50%);
+}
+
+.icon {
+  fill: #8e8f99;
 }
 
 .modal-check {
