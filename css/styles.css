@@ -653,14 +653,19 @@ p {
 
   border-radius: 50%;
 
-  transition: background-color 250ms var(--transition-function);
+  transition: background-color var(--time);
 }
 
 .team-icon .link-icon:hover,
 .team-icon .link-icon:focus,
 .menu-soc-link:hover,
 .menu-soc-link:focus {
-  background-color: var(--hover-button-portfolio-background);
+  background-color: var(--hover-focus-color);
+}
+
+.icon:hover,
+.icon:focus {
+  fill: var(--hover-focus-color);
 }
 
 .customers .title {
@@ -696,19 +701,18 @@ p {
   border: 1px solid var(--grei-color);
   border-radius: 4px;
 
-  transition: fill 250ms var(--transition-function),
-    border 250ms var(--transition-function);
+  transition: fill var(--time),
+    border var(--time);
 }
 
 .customers-icon .link-icon:hover,
 .customers-icon .link-icon:focus {
-  fill: var(--hover-button-portfolio-background);
-
-  border: 1px solid var(--hover-button-portfolio-background);
+  fill: var(--hover-focus-color);
+  border: 1px solid var(--hover-focus-color);
 }
 
 
-position
+
 /*---------- Portfolio card overlay ------------*/
 
 .card-overlay {
@@ -722,16 +726,13 @@ position
   left: 0;
   bottom: 0;
   right: 0;
-
   padding: 40px 32px;
-
   color: var(--button-color);
   background-color: var(--active-color);
 
   line-height: 1.5;
 
   opacity: 0;
-
   transform: translateY(100%);
   transition: transform 250ms var(--transition-function),
     opacity 500ms var(--transition-function);

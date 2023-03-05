@@ -98,10 +98,13 @@
   }
 
   .hero-title {
-    width: 496px;
+    width: 494px;
     color: #ffffff;
     font-size: 56px;
     line-height: 1.07;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.02em;
   }
 
   /* ------------SECTION SPECIFICS --------1 */
