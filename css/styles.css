@@ -1417,6 +1417,7 @@ position
 
   .footer-container {
     gap: 0;
+
   }
 
   .text-container {
@@ -1473,4 +1474,12 @@ position
   .team-icon .item {
     margin-bottom: 0;
   }
+}
+
+@media screen and (max-width: 1300px) {
+
+  .footer {
+    background-color: var(--paragraf-text-color);
+  }
+
 }

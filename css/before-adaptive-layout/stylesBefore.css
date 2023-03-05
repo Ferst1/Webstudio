@@ -267,7 +267,6 @@ p {
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #2e2f42;
 }
 
 .footer-link {
@@ -308,7 +307,6 @@ p {
 .footer>.container {
   display: flex;
   justify-content: flex-start;
-  background-color: #2e2f42;
 }
 
 .footer-form {
@@ -793,7 +791,7 @@ p {
 }
 
 .menu-open {
-  stroke: #000000;
+  stroke: var(--main-color);
 }
 
 .modal-form .thumb-form {
@@ -959,5 +957,19 @@ p {
     background-color 250ms var(--transition-function),
     border 250ms var(--transition-function);
 }
+
+.menu-tel-link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: var(--active-color);
 }
+
+.menu-item:hover,
+.menu-item:focus {
+  color: var(--active-color);
+  cursor: pointer;
 }
