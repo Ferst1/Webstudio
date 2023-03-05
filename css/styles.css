@@ -762,9 +762,8 @@ position
 
   width: 100vw;
   height: 100vh;
-
-  background-color: var(--window-bg-color);
-
+  background-color: #FCFCFC;
+  ;
   transition: opacity 250ms var(--transition-function),
     visibility 250ms var(--transition-function);
 }
@@ -799,9 +798,7 @@ position
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-
   margin-bottom: 4px;
-
   color: var(--customers-icon-color);
 }
 
@@ -937,14 +934,12 @@ position
 
 .modal-send-btn {
   min-width: 169px;
-
+  color: var(--button-color);
   margin-left: auto;
   margin-right: auto;
   padding: 16px 32px;
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
   transition: background-color 250ms var(--transition-function);
 }
 
@@ -1014,21 +1009,20 @@ position
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 24px;
   height: 24px;
-
   margin-left: auto;
   margin-bottom: 32px;
-
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-
   cursor: pointer;
-
   transition: fill 250ms var(--transition-function),
     background-color 250ms var(--transition-function);
+}
+
+.menu-close {
+  stroke: #000000;
 }
 
 .menu-site-nav {
