@@ -2,26 +2,23 @@
   .container {
     max-width: 426px;
   }
+
   /* -----------HEADER------------- */
   /* -----------SECTION HERO------------- */
-  .bg-image {
-    background-image: linear-gradient(
-        to right,
+  .bg-age {
+    background-image: linear-gradient(to right,
         rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+        rgba(46, 47, 66, 0.7)),
       url('../images/480/hero/hero-480_1x.jpg');
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .bg-image {
-      background-image: linear-gradient(
-          to right,
+      background-image: linear-gradient(to right,
           rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
+          rgba(46, 47, 66, 0.7)),
         url('../images/480/hero/hero-480_2x.jpg');
     }
   }
@@ -83,30 +80,26 @@
 
   /* -------------SECTION HERO------------ */
   .bg-image {
-    background-image: linear-gradient(
-        to right,
+    background-image: linear-gradient(to right,
         rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+        rgba(46, 47, 66, 0.7)),
       url('../images/768/hero/hero-768_1x.jpg');
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .bg-image {
-      background-image: linear-gradient(
-          to right,
+      background-image: linear-gradient(to right,
           rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
+          rgba(46, 47, 66, 0.7)),
         url('../images/768/hero/hero-768_2x.jpg');
     }
   }
 
   .hero-title {
     width: 496px;
-
+    color: #ffffff;
     font-size: 56px;
     line-height: 1.07;
   }
@@ -149,6 +142,8 @@
   .footer {
     padding-left: 93px;
     padding-right: 149px;
+    background-color: #2e2f42;
+
   }
 
   .footer-container {
@@ -156,6 +151,9 @@
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
+    background-color: #2e2f42;
+    color: var(#ffffff);
+
   }
 
   .text-container,
@@ -219,29 +217,26 @@
   /*---------------SECTION HERO----------- */
 
   .bg-image {
-    background-image: linear-gradient(
-        to right,
+    background-image: linear-gradient(to right,
         rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+        rgba(46, 47, 66, 0.7)),
       url('../images/people-office.jpg');
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .bg-image {
-      background-image: linear-gradient(
-          to right,
+      background-image: linear-gradient(to right,
           rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
+          rgba(46, 47, 66, 0.7)),
         url('../images/1200/hero/people-office-1200_2x.jpg');
     }
   }
 
   .hero-title {
     width: 496px;
+    color: #ffffff;
   }
 
   /* ------------SECTION SPECIFICS------------- */
@@ -281,6 +276,7 @@
   .team .container {
     max-width: 1158px;
   }
+
   .team-list {
     flex-wrap: nowrap;
     gap: 0;
@@ -342,6 +338,7 @@
 }
 
 @media screen and (max-width: 767px) {
+
   .page-header .main-nav,
   .page-header .address {
     display: none;
