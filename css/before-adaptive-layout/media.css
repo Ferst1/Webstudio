@@ -1,0 +1,361 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 426px;
+  }
+  /* -----------HEADER------------- */
+  /* -----------SECTION HERO------------- */
+  .bg-image {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/480/hero/hero-480_1x.jpg');
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .bg-image {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/480/hero/hero-480_2x.jpg');
+    }
+  }
+
+  /* ---------------SECTION TEAM -----------2 */
+
+  .team {
+    padding-top: 96px;
+    padding-bottom: 128px;
+  }
+
+  .team .container {
+    max-width: 294px;
+  }
+
+  .team-icon .item {
+    margin-bottom: 0;
+  }
+
+  .team-list .item:last-child {
+    margin-bottom: 0;
+  }
+
+  /* ------SECTION CUSTOMERS--------- */
+
+  .section.customers {
+    padding-top: 96px;
+  }
+
+  /* -----------PORTFOLIO------------- */
+
+  .card-list .item {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 766px;
+  }
+
+  /* -----------HEADER------------- */
+  .page-header {
+    justify-content: space-between;
+  }
+
+  .mob-menu,
+  .menu-open {
+    display: none;
+  }
+
+  .address-link {
+    padding: 0;
+  }
+
+  .address-nav {
+    flex-direction: column;
+  }
+
+  /* -------------SECTION HERO------------ */
+  .bg-image {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/768/hero/hero-768_1x.jpg');
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .bg-image {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/768/hero/hero-768_2x.jpg');
+    }
+  }
+
+  .hero-title {
+    width: 496px;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
+  /* ------------SECTION SPECIFICS --------1 */
+  .specifics-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .specifics-list .item {
+    flex-basis: calc(50% - 12px);
+    margin-bottom: 0;
+  }
+
+  .title-specifics {
+    text-align: inherit;
+  }
+
+  /* ---------------SECTION TEAM -----------2 */
+
+  .team .container {
+    max-width: 582px;
+  }
+
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+
+  .team-list .item {
+    margin-bottom: 0;
+  }
+
+  /*---------- FOOTER ------- */
+  .footer {
+    padding-left: 93px;
+    padding-right: 149px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .text-container,
+  .social-container {
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .footer-form {
+    width: 453px;
+    flex-direction: row;
+  }
+
+  /* -----------PORTFOLIO------------- */
+  .portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .filter-list {
+    justify-content: center;
+    padding-bottom: 64px;
+  }
+
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+
+    margin-inline: auto;
+  }
+
+  .card-list .item {
+    /* width: 356px; */
+
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .container,
+  .page-header {
+    max-width: 1158px;
+  }
+
+  /* -----------------HEADER-------------- */
+
+  .address-nav {
+    flex-direction: row;
+  }
+
+  .mail-link {
+    margin-right: 40px;
+  }
+
+  /*---------------SECTION HERO----------- */
+
+  .bg-image {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/people-office.jpg');
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .bg-image {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/1200/hero/people-office-1200_2x.jpg');
+    }
+  }
+
+  .hero-title {
+    width: 496px;
+  }
+
+  /* ------------SECTION SPECIFICS------------- */
+
+  .specifics-list {
+    flex-wrap: nowrap;
+  }
+
+  .specifics-list .item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+
+  .specifics-icon {
+    display: flex;
+  }
+
+  .specifics-list .paragraph {
+    font-weight: inherit;
+  }
+
+  .title-specifics {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  /* ---------SECTION EMPLOYMENT----------- */
+  .section.employment {
+    display: block;
+  }
+
+  .employment-list .item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  /* ---------SECTION TEAM---------------*/
+  .team .container {
+    max-width: 1158px;
+  }
+  .team-list {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+
+  .team-list .item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  /* ------SECTION CUSTOMERS--------- */
+  .section.customers {
+    padding-top: 130px;
+  }
+
+  .customers-icon {
+    flex-wrap: nowrap;
+    column-gap: 24px;
+  }
+
+  /* ---------FOOTER---------- */
+
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-container {
+    gap: 0;
+  }
+
+  .text-container {
+    margin-right: 120px;
+  }
+
+  .social-container {
+    margin-right: auto;
+  }
+
+  .footer-form {
+    gap: 24px;
+  }
+
+  .footer-form input {
+    width: 264px;
+  }
+
+  /* -----------PORTFOLIO------------- */
+  .portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+
+  .card-list .item {
+    width: 360px;
+  }
+
+  .filter-list {
+    padding-bottom: 72px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page-header .main-nav,
+  .page-header .address {
+    display: none;
+  }
+
+  .modal-overlay .modal {
+    width: 392px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal-overlay .modal {
+    width: 85%;
+  }
+}
