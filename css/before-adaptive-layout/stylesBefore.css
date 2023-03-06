@@ -955,6 +955,24 @@ p {
   letter-spacing: 0.04em;
 }
 
+.input-emeil {
+  color: #E7E9FC;
+}
+
+.input-emeil {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(24 / 12);
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: inherit;
+  border-radius: 4px;
+  outline: none;
+}
+
+
 .modal-check span {
   display: flex;
   align-items: center;
