@@ -797,7 +797,7 @@ p {
   padding: 72px 24px 24px 24px;
 
   color: var(--customers-icon-color);
-  background-color: var(--modal-bg-color);
+  background-color: var(--button-color);
 
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -805,6 +805,8 @@ p {
 
   transform: translate(-50%, -50%) scale(100%);
 }
+
+
 
 .modal-form {
   display: flex;
@@ -850,6 +852,12 @@ p {
 .modal-form input:not(.modal-checkbox):focus+svg {
   fill: var(--active-color);
 }
+
+.modal-checkbox:focus+.text-modal-check.icon-check {
+  fill: var(--accent-color);
+}
+
+.modal-form-input:focus+.modal-form-input-icon .drop-icon {}
 
 .modal-form textarea {
   min-height: 120px;
@@ -1036,9 +1044,6 @@ p {
     background-color 250ms var(--transition-function);
 }
 
-.icon-check {
-  fill: transparent;
-}
 
 .icon-check:hover .icon-check:focus {
   background-color: var(--hover-focus-color);

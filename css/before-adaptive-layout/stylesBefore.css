@@ -668,7 +668,6 @@ p {
 .customers-icon .link-icon:hover,
 .customers-icon .link-icon:focus {
   fill: var(--hover-focus-color);
-
   border: 1px solid;
 }
 
@@ -955,11 +954,11 @@ p {
   letter-spacing: 0.04em;
 }
 
-.input-emeil {
+.emeil::placeholder {
   color: #E7E9FC;
 }
 
-.input-emeil {
+.input-emeil::placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 12px;
