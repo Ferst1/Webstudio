@@ -218,7 +218,7 @@ p {
   margin-right: auto;
   margin-bottom: 48px;
   color: var(--accent-color);
-  font-size: 36px;
+  font-size: 40px;
   line-height: 1.11;
   letter-spacing: 0.02em;
 }
@@ -408,19 +408,14 @@ p {
 
 .filter-button {
   padding: 12px 24px;
-
-  background-color: var(--white-studio-color);
-
   cursor: pointer;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
   border: 1px solid var(--footer-text-color);
   border-radius: 4px;
-
   transition: background-color 250ms var(--transition-function),
     color 250ms var(--transition-function),
     box-shadow 250ms var(--transition-function),
@@ -429,8 +424,8 @@ p {
 
 .filter-button:hover,
 .filter-button:focus {
-  color: var(--white-color);
-  background-color: var(--hover-button-portfolio-background);
+  color: var(--accent-color);
+  background-color: var(--accent-focus);
 
   border-color: transparent;
 
@@ -495,9 +490,31 @@ p {
   transition: color 250ms var(--transition-function);
 }
 
+.header-link:hover .header-link:focus {
+  color: var(--active-color);
+}
+
+.page {
+  color: var(--active-color);
+}
+
+.page:hover,
+.page:focus {
+  color: var(--hover-focus-color);
+}
+
+.log {
+  transition: color var(--time);
+}
+
+.log:hover,
+.log:focus {
+  color: var(--accent-focus);
+}
+
 .link:hover,
 .link:focus {
-  color: var(--hover-button-portfolio-background);
+  color: var(--accent-focus);
 
   font-weight: 500;
   line-height: 1.5;
@@ -876,19 +893,17 @@ p {
 .close-btn:focus,
 .menu-close:hover,
 .menu-close:focus {
-  fill: var(--white-color);
-  background-color: var(--hover-button-portfolio-background);
+  fill: var(--accent-color);
+  background-color: var(--hover-focus-color);
+  cursor: pointer;
 }
 
 .paragraph-modal {
   font-weight: 500;
   line-height: 1.5;
-
   text-align: center;
   letter-spacing: 0.02em;
-
   margin-bottom: 14px;
-
   color: var(--main-color);
 }
 
@@ -917,7 +932,7 @@ p {
 }
 
 .modal-checkbox:checked+.text-modal-check span {
-  fill: var(--white-color);
+  fill: var(--accent-color);
   background-color: var(--active-color);
   border: none;
 }
@@ -946,7 +961,6 @@ p {
 
 ::placeholder {
   color: rgba(117, 117, 117, 0.5);
-
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -1022,6 +1036,15 @@ p {
     background-color 250ms var(--transition-function);
 }
 
+.icon-check {
+  fill: transparent;
+}
+
+.icon-check:hover .icon-check:focus {
+  background-color: var(--hover-focus-color);
+  fill: var(--accent-color);
+}
+
 .menu-close {
   stroke: #000000;
 }
@@ -1090,12 +1113,9 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 100%;
   height: 100%;
-
   background-color: var(--active-color);
-
   border-radius: 50%;
   transition: background-color 250ms var(--transition-function);
 }

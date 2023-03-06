@@ -23,6 +23,22 @@
     }
   }
 
+  .hero-title {
+    width: 318px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+  }
+
+  /* -------------Header------------- */
+  .page-header {
+    max-width: 428px;
+  }
+
+
   /* ---------------SECTION TEAM -----------2 */
 
   .team {
@@ -239,6 +255,7 @@
   .hero-title {
     width: 496px;
     color: #ffffff;
+    font-size:
   }
 
   /* ------------SECTION SPECIFICS------------- */
