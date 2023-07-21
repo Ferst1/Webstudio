@@ -169,11 +169,34 @@ p {
 .address-link:hover,
 .address-link:focus {
   color: var(--hover-focus-color);
-
+  text-decoration: underline;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
+}
+
+.link {
+  text-decoration: none;
+  position: relative;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: currentColor;
+  transition: 0.2s;
+
+}
+
+.link:hover::before {
+
+  width: 100%;
+  left: 0;
 }
 
 .hero {
@@ -308,7 +331,7 @@ p {
 
   padding-left: 16px;
 
-  color: var(--white-color);
+  color: #ffffff;
   background-color: transparent;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
