@@ -665,23 +665,6 @@ p {
 }
 
 
-/* .header-link.current::after {
-
-  content: "";
-  color: inherit;
-  align-items: baseline;
-  display: block;
-  background: var(--hover-focus-color);
-  border-radius: 2px;
-  width: 100%;
-  height: 4px;
-  position: absolute;
-  left: 0px;
-  top: 48px;
-  transform: translatey(-100%);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
 .header-contact {
   position: relative;
 }
@@ -705,8 +688,8 @@ p {
   line-height: 1.5;
   opacity: 0;
   transform: translateY(100%);
-  transition: transform 250ms var(--transition-function),
-    opacity 500ms var(--transition-function);
+  transition: transform 350ms var(--transition-function),
+    opacity 500ms var(--time);
 }
 
 .card-list a:hover .paragraph-overlay,
@@ -734,7 +717,7 @@ p {
   height: 100vh;
   background-color: var(--window-bg-color);
   transition: opacity 250ms var(--transition-function),
-    visibility 250ms var(--transition-function);
+    visibility 350ms var(--transition-function);
 }
 
 .modal-overlay .modal {
@@ -744,20 +727,12 @@ p {
   width: 408px;
   min-height: 576px;
   padding: 72px 24px 24px 24px;
-
-
   color: var(--customers-icon-color);
   background-color: var(--modal-bg-color);
-
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
   transform: translate(-50%, -50%) scale(100%);
-  transform: translate(-50%, -50%) scale(100%);
-  ;
-  transform: translate(-50%, -50%) scale(100%);
-
 }
 
 .modal-form {
@@ -784,12 +759,9 @@ p {
 
 .modal-form input:not(.modal-checkbox) {
   width: 100%;
-
   padding: 11px 16px 11px 37px;
-
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
   transition: border 250ms var(--transition-function),
     outline 250ms var(--transition-function),
     fill 250ms var(--transition-function);
@@ -814,10 +786,8 @@ p {
   margin-bottom: 16px;
   padding: 8px 16px;
   resize: none;
-
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
   transition: border 250ms var(--transition-function),
     outline 250ms var(--transition-function);
 }
@@ -826,22 +796,16 @@ p {
   position: absolute;
   top: 24px;
   right: 24px;
-
   display: flex;
   justify-content: center;
   align-items: center;
   width: 24px;
   height: 24px;
-
   padding: 0;
-
-  background-color: var(--border-portfolio-color);
-
+  background-color: var(--white-studio-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-
   cursor: pointer;
-
   transition: fill 250ms var(--transition-function),
     background-color 250ms var(--transition-function);
 }
@@ -849,18 +813,15 @@ p {
 .close-btn:hover,
 .close-btn:focus {
   fill: var(--button-color);
-  background-color: var(--hover-focus-color);
+  background-color: #ffffff;
 }
 
 .paragraph-modal {
   font-weight: 500;
   line-height: 1.5;
-
   text-align: center;
   letter-spacing: 0.02em;
-
   margin-bottom: 14px;
-
   color: var(--main-color);
 }
 
